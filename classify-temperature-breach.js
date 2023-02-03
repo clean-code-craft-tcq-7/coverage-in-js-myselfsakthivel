@@ -1,4 +1,4 @@
-function classifyTemperatureBreach(coolingType, temperatureInC) {
+function classifyTempBreach(coolingType, temperatureInC) {
   let lowerLimit = 0;
   let upperLimit = 0;
   let coolingTypeObj = {
@@ -24,4 +24,4 @@ function inferBreach(value, lowerLimit, upperLimit) {
   return 'NORMAL';
 }
 
-module.exports = {classifyTemperatureBreach};
+module.exports = {classifyTempBreach};
