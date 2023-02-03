@@ -21,3 +21,5 @@ function inferBreach(value, lowerLimit, upperLimit) {
   }
   return 'NORMAL';
 }
+
+module.exports = {classifyTemperatureBreach};
