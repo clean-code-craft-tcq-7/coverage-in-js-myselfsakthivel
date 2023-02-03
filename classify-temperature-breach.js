@@ -7,8 +7,10 @@ function classifyTemperatureBreach(coolingType, temperatureInC) {
     'HI_ACTIVE_COOLING': 45
   };
   
-  upperLimit = Object.prototype.hasOwnProperty.call(coolingTypeObj, 'coolingType') ? coolingTypeObj[coolingType] : 0;
-
+  if(Object.prototype.hasOwnProperty.call(coolingTypeObj, 'coolingType')){
+    upperLimit = coolingTypeObj[coolingType];
+  }
+  
   return inferBreach(temperatureInC, lowerLimit, upperLimit);
 }
 
